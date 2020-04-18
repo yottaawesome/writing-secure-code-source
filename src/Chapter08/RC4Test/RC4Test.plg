@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RC4Test - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\brianjo\LOCALS~1\Temp\RSP25C.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /D _WIN32_WINNT=0x0400 /Fp"Debug/RC4Test.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"S:\compdisc\Secureco2_techeditor\Chapter08\RC4Test\RC4Test.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\brianjo\LOCALS~1\Temp\RSP25C.tmp" 
+Creating temporary file "C:\DOCUME~1\brianjo\LOCALS~1\Temp\RSP25D.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /D _WIN32_WINNT=0x0400 /Fp"Debug/RC4Test.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"S:\compdisc\Secureco2_techeditor\Chapter08\RC4Test\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\brianjo\LOCALS~1\Temp\RSP25D.tmp" 
+Creating temporary file "C:\DOCUME~1\brianjo\LOCALS~1\Temp\RSP25E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib crypt32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/RC4Test.pdb" /debug /machine:I386 /out:"Debug/RC4Test.exe" /pdbtype:sept 
+.\Debug\RC4Test.obj
+.\Debug\StdAfx.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\brianjo\LOCALS~1\Temp\RSP25E.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+RC4Test.cpp
+s:\compdisc\secureco2_techeditor\chapter08\rc4test\rc4test.cpp(100) : fatal error C1010: unexpected end of file while looking for precompiled header directive
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+RC4Test.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

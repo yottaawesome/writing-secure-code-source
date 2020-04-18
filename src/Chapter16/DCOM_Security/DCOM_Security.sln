@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DCOM_Security", "DCOM_Security.vcproj", "{A6D7C686-6B79-4E8B-A331-72D1947D8F96}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "TestClient", "TestClient\TestClient.dsp", "{6D705FEC-4CCA-416E-9D99-A17E77C155D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release MinDependency
+		ConfigName.2 = Release MinSize
+		ConfigName.3 = Unicode Debug
+		ConfigName.4 = Unicode Release MinDependency
+		ConfigName.5 = Unicode Release MinSize
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A6D7C686-6B79-4E8B-A331-72D1947D8F96}.Debug.ActiveCfg = Debug|Win32
+		{A6D7C686-6B79-4E8B-A331-72D1947D8F96}.Debug.Build.0 = Debug|Win32
+		{A6D7C686-6B79-4E8B-A331-72D1947D8F96}.Release MinDependency.ActiveCfg = Release MinDependency|Win32
+		{A6D7C686-6B79-4E8B-A331-72D1947D8F96}.Release MinDependency.Build.0 = Release MinDependency|Win32
+		{A6D7C686-6B79-4E8B-A331-72D1947D8F96}.Release MinSize.ActiveCfg = Release MinSize|Win32
+		{A6D7C686-6B79-4E8B-A331-72D1947D8F96}.Release MinSize.Build.0 = Release MinSize|Win32
+		{A6D7C686-6B79-4E8B-A331-72D1947D8F96}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{A6D7C686-6B79-4E8B-A331-72D1947D8F96}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{A6D7C686-6B79-4E8B-A331-72D1947D8F96}.Unicode Release MinDependency.ActiveCfg = Unicode Release MinDependency|Win32
+		{A6D7C686-6B79-4E8B-A331-72D1947D8F96}.Unicode Release MinDependency.Build.0 = Unicode Release MinDependency|Win32
+		{A6D7C686-6B79-4E8B-A331-72D1947D8F96}.Unicode Release MinSize.ActiveCfg = Unicode Release MinSize|Win32
+		{A6D7C686-6B79-4E8B-A331-72D1947D8F96}.Unicode Release MinSize.Build.0 = Unicode Release MinSize|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

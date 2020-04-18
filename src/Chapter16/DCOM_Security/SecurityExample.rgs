@@ -1,0 +1,24 @@
+HKCR
+{
+	DCOM_Security.SecurityExample.1 = s 'SecurityExample Class'
+	{
+		CLSID = s '{BBE980C5-D465-4281-920F-5BBB5CBDB03F}'
+	}
+	DCOM_Security.SecurityExample = s 'SecurityExample Class'
+	{
+		CLSID = s '{BBE980C5-D465-4281-920F-5BBB5CBDB03F}'
+		CurVer = s 'DCOM_Security.SecurityExample.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {BBE980C5-D465-4281-920F-5BBB5CBDB03F} = s 'SecurityExample Class'
+		{
+			ProgID = s 'DCOM_Security.SecurityExample.1'
+			VersionIndependentProgID = s 'DCOM_Security.SecurityExample'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{DFFA5B46-DA95-4558-A47F-738EAFEE7F76}'
+			'TypeLib' = s '{FA433FAF-4A94-49E1-A6CB-3F092F6DA538}'
+		}
+	}
+}

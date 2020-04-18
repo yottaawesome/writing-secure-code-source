@@ -1,0 +1,9 @@
+[ uuid (18F88F5A-4B19-4b7b-BAD5-4F2724DD2FD9),
+  version(1.0),
+  pointer_default(unique)
+]
+interface phone
+{
+  void Message([in] handle_t h,
+			   [in, string] unsigned char * pszString);
+}

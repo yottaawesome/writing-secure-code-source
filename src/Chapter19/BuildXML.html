@@ -1,0 +1,32 @@
+
+<!-- BuildXML.html -->
+<XML ID="template">
+    <user>
+        <name/>
+        <title/>
+        <age/>
+    </user>
+</XML>
+
+<SCRIPT>
+    // Build long strings 
+    // for use in the rest of the test application.
+    function createBigString(str, len) {
+        var str2 = new String();
+        for (var i = 0; i < len; i++)
+            str2 += str;
+      
+        return str2;
+    }
+
+    var user = template.XMLDocument.documentElement;
+
+    user.childNodes.item(0).text = createBigString("A", 256);
+    user.childNodes.item(1).text = createBigString("B", 128);
+    user.childNodes.item(2).text = Math.round(Math.random() * 1000);
+
+    var oFS = new ActiveXObject("Scripting.FileSystemObject");
+    var oFile = oFS.CreateTextFile("c:\\temp\\user.xml");
+    oFile.WriteLine(user.xml);
+    oFile.Close();
+</SCRIPT>

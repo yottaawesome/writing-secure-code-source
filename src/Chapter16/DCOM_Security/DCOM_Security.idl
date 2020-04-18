@@ -1,0 +1,41 @@
+// DCOM_Security.idl : IDL source for DCOM_Security.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DCOM_Security.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(FAC42B1C-A883-45FD-9422-0BD73EC26ECD),
+		dual,
+		helpstring("ISecurityExample Interface"),
+		pointer_default(unique)
+	]
+
+	interface ISecurityExample : IDispatch
+	{
+//		[id(1), helpstring("method GetServerBlanket")] HRESULT GetServerBlanket(DWORD* AuthNSvc, DWORD* AuthZSvc, DWORD* AuthLevel, DWORD* ImpLevel, OLECHAR* NameBuf, DWORD size);
+		[id(1), helpstring("method GetServerBlanket")] HRESULT GetServerBlanket(DWORD* AuthNSvc, DWORD* AuthZSvc, DWORD* AuthLevel, DWORD* ImpLevel);
+	};
+
+[
+	uuid(FA433FAF-4A94-49E1-A6CB-3F092F6DA538),
+	version(1.0),
+	helpstring("DCOM_Security 1.0 Type Library")
+]
+library DCOM_SECURITYLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(BBE980C5-D465-4281-920F-5BBB5CBDB03F),
+		helpstring("SecurityExample Class")
+	]
+	coclass SecurityExample
+	{
+		[default] interface ISecurityExample;
+	};
+};

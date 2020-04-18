@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{DFFA5B46-DA95-4558-A47F-738EAFEE7F76} = s 'DCOM_Security'
+		'DCOM_Security.EXE'
+		{
+			val AppID = s {DFFA5B46-DA95-4558-A47F-738EAFEE7F76}
+		}
+	}
+}

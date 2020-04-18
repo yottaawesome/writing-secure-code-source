@@ -1,0 +1,9 @@
+[Unicode]
+Unicode=yes
+[Version]
+signature="$CHICAGO$"
+Revision=1
+[Registry Keys]
+"MACHINE\SOFTWARE\NewApp",0,"D:(A;CI;GA;;;WD)"
+[File Security]
+"%newapp_install%",0,"D:(A;OICI;GA;;;WD)"
